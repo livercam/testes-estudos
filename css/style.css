@@ -1,0 +1,83 @@
+body{
+    background-color: lightslategrey;
+    color: white;
+}
+
+#imagePromotion{
+    padding: 10px;
+}
+#imagePromotion>img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
+}
+
+#greetings{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#storeName{
+    width: 49%; 
+    height: 140px;
+    border-style: solid;
+
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+    background-color: teal;
+    background-image: url(/firstTest/images/superstore1.jpg);
+    background-position: center; 
+    background-size: cover;
+}
+
+
+#storeName>h1{
+    font-size: 28px;
+}
+#saveMoney{
+    width: 49%;
+    height: 140px;   
+
+    background-color: slateblue;    
+    border-style: solid;
+
+    display: flex;
+    
+}
+
+#promotionContent{
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+@media (max-width: 600px){
+   
+    #storeName{
+        width: 100%;        
+    }
+    #storeName>h1{
+        font-size: 25px;
+    }
+    #storeName>h3{
+        font-size: 15px;
+    }
+
+    #saveMoney{
+        width: 100%;
+    }
+
+    #imagePromotion>img{
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+    }
+    
+    #greetings{
+        flex-direction: column;
+        min-width: 300px;
+    }    
+}
